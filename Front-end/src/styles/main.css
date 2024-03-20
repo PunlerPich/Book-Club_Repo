@@ -1,0 +1,418 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
+
+/* ================================================================ */
+.content {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+  }
+
+/* ================================================================== */
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Titillium Web", sans-serif;
+}
+
+:root {
+	--mainColor: #ffffff;
+	--mainColorLight: #5767aa;
+	--secondaryColor: #b3b3ff;
+	--textColor: #595959;
+}
+
+
+
+/* ==================================================== register_Form Modual =============================================== */
+
+body{
+	background-color: #f5f5f5;
+}
+  .container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 80vh;
+  }
+  
+  .register-form {
+	width: 400px;
+	height: 400px;
+	padding: 20px;
+	background-color: #ffffff;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	padding-top: 50px;
+  }
+  
+  .label-password,
+  .label-email{
+	color: #333333;
+	font-size: 20px;
+	font-weight: bold;
+  }
+  .register-form h2 {
+	text-align: center;
+  }
+  
+  .form-field {
+	margin-bottom: 10px;
+	
+  }
+  
+  .form-field label {
+	display: block;
+  }
+  
+  .form-field input {
+	width: 100%;
+	padding: 5px;
+  }
+  
+  /* .button {
+	display: block;
+	margin-top: 10px;
+	width: 100%;
+	padding: 10px;
+	background-color: #4caf50;
+	color: white;
+	border: none;
+	cursor: pointer;
+  } */
+  
+  .image-box {
+	width: 400px;
+	height: 400px;
+	padding: 20px;
+	background-color: #f4eeee;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-color: #453333;
+	
+  }
+  
+  .box-label {
+	text-align: left;
+	margin-bottom: 10px;
+	color: #300ef3;
+	font-size: 20px;
+  }
+  
+  .image-box img {
+	display: block;
+	width: 100%;
+	height: auto;
+  }
+
+  .rounded-input {
+	border-radius: 10px;
+	padding: 5px;
+	height: 50px;
+	border: 1px solid #ccc;
+  }
+
+  @media only screen and (max-width: 1024px){
+	.container {
+		display: grid;
+		justify-content: center;
+		align-items: center;
+		height: 110vh;
+
+	  }
+
+	  .register-form {
+		width: 450px;
+		height: 350px;
+		padding: 20px;
+		background-color: #ffffff;
+		border-radius: 10px;
+	  }
+
+	  .image-box {
+		width: 450px;
+		height: 350px;
+		padding: 20px;
+		background-color: #f4eeee;
+		border-radius: 10px;
+		border-color: #453333;
+		
+	  }
+  }
+
+
+
+
+
+
+
+/* ====================== */
+  .btn-create-acc{
+	display: flex;
+	justify-content: center;
+	padding: 5px;
+	background-color: #5426d1;
+	border: 1px solid #ccc;
+	color: #ffffff;
+	border-radius: 10px;
+	font-size: 16px;
+	width: 100%;
+	cursor: pointer;
+  }
+
+  .btn-create-acc:hover{
+	background: rgb(34, 40, 109);
+  }
+
+  .google-button {
+	margin-top: 10px;
+	display: flex;
+	justify-content: center;
+	padding: 5px;
+	background-color: #ea0b0bc1;
+	border: 1px solid #ccc;
+	color: #ffffff;
+	border-radius: 10px;
+	font-size: 16px;
+	width: 100%;
+	cursor: pointer;
+  }
+
+  .google-button:hover{
+	background: #992204;
+  }
+  
+  .google-logo {
+	width: 20px;
+	height: 20px;
+	margin-left: 10px;
+	align-items: center;
+  }
+
+  .btn-up-in{
+	display: flex;
+	justify-content: space-between;
+  }
+
+  .btn-SignUp{
+	display: flex;
+	justify-content: center;
+	padding: 5px;
+	background-color: #fe4848;
+	border: 1px solid #ccc;
+	color: #ffffff;
+	border-radius: 10px;
+	font-size: 16px;
+	width: 40%;
+	cursor: pointer;
+  }
+
+  .btn-SignIn{
+	display: flex;
+	justify-content: center;
+	padding: 5px;
+	background-color: #5426d1;
+	border: 1px solid #ccc;
+	color: #ffffff;
+	border-radius: 10px;
+	font-size: 16px;
+	width: 40%;
+	cursor: pointer;
+  }
+
+  .btn-SignUp:hover{
+	background-color: #ba0b0b;
+  }
+
+  .btn-SignIn:hover{
+	background: rgb(34, 40, 109);
+  }
+
+
+  .label-forget{
+	display: flex;
+	justify-content: center;
+	font-size: 16px;
+	margin-top: 10px;
+	color: #333333;
+	opacity: 0.6;
+  }
+  /* =================================================== detail page */
+
+  .container-detail {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	height: 80vh;
+	
+  }
+
+  .image-box-detail {
+	display: flex;
+	width: auto;
+	height: 500px;
+	padding: 20px;
+	background-color: #f4eeee;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-color: #453333;
+	box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.2);
+  }
+
+  
+  .img {
+	display: block;
+	width: 70%;
+	height: auto;
+	margin-right: 10px;
+  }
+
+  .star-icon{
+	color: #fdd835;
+	margin-right: 2px;
+	margin-bottom: 2px;
+  }
+
+  .label-title{
+	color: #333333;
+	font-size: 30px;
+	font-weight: 300;
+  }
+  .label-subtitle{
+	color: #333333;
+	font-size: 14px;
+	font-weight: lighter;
+  }
+
+  .label-desc{
+	margin-top: 10px;
+	color: #333333;
+	font-size: 16px;
+	font-weight: lighter;
+  }
+
+    
+  .text-container {
+	width: 500px;
+	height: 500px;
+	padding: 20px;
+	background-color: #ffffff;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	padding-top: 50px;
+  }
+
+  .discuss-contanier{
+	display: block;
+	justify-content: center;
+	margin: auto;
+  }
+
+  .title-question{
+	display: flex;
+	width: 70%;
+	margin: auto;
+
+  }
+  .subtitle-question{
+	display: flex;
+	text-align: left;
+	border: none;
+  }
+  .subtitle2-question{
+	display: flex;
+	/* text-align: left; */
+	border: none;
+	width: auto;
+  }
+
+
+  .text-title{
+	color: #f63535;
+	font-size: 25px;
+	font-weight: 600;
+
+  }
+
+  .btn-bookmark{
+	color: #fdd835;
+	margin-right: 2px;
+	margin-bottom: 2px;
+	font-size: 300px;
+	;
+  }
+
+  .btn-reply {
+	display: flex;
+	justify-content: right;
+  }
+  
+  .button-container {
+	display: flex;
+	gap: 10px;
+	
+  }
+
+  .btn-rr,
+  .btn-cc{
+	border: none;
+	color: #300ef3;
+  }
+
+  
+  .btn-cc:hover{
+	color: #271064;
+  }
+
+  .btn-rr:hover{
+	color: #271064;
+  }
+
+  @media only screen and (max-width: 1024px){
+	.container-detail {
+		display: block;
+		justify-content: center;
+		align-items: center;
+		height: 80vh;
+	  }
+
+	  .title-question{
+		display: flex;
+		width: 70%;
+		margin: auto;
+	  }
+  }
+/* =============================================== */
+.about-section {
+	padding: 50px;
+	text-align: center;
+	background-color: #474e5d;
+	color: white;
+  }
+
+  .team-col-1 {
+	display: block;
+	justify-content: flex-start;
+  }
+
+  .img-test{
+	width: 100%;
+  }
+
+  .btn-contact{
+	width: 100%;
+	height: 50px;
+	background-color: #271064;
+	color: white;
+	border-radius: 20px;
+  }
+
+  .btn-contact:hover{
+	background-color: #4a27ac;
+  }
+.grid1{
+justify-content: center;
+	margin: auto;
+}
+  
